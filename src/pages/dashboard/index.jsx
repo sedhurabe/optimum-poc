@@ -37,6 +37,7 @@ const Dashboard = () => {
 
     const handleCardEdit = (item) => {
         const { name, email, amount, expiry, id } = item;
+        setShowAddForm(true);
         setCardEdit(true);
         setCardObj({ name, email, amount, expiry, id });
     }

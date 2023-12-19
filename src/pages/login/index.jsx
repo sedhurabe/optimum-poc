@@ -22,7 +22,7 @@ const Login = () => {
             const loc = JSON.parse(reloc);
             const { email, password } = loginObj;
             const isExist = some(loc, el => (el?.email === email && el?.password === password));
-            isExist ? navigate("/dashboard") : setValidationState('Invalid email or password');
+            isExist ? navigate("/home") : setValidationState('Invalid email or password');
         } else {
             setValidationState(message);
         }

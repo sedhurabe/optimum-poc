@@ -1,0 +1,17 @@
+@import 'src/scss/mixins';
+
+.form-element {
+    margin-bottom: 15px;
+
+    input {
+        @include width-height(100%, 45px);
+        background-color: transparent;
+        border-radius: 4px;
+        border: 1px solid var(--border-color);
+        padding: 10px;
+    }
+    &__error{
+        color: var(--error-color);
+        font-size: calc(var(--body-font-size) - 2px);
+    }
+}

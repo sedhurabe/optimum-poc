@@ -1,0 +1,21 @@
+@import 'src/scss/mixins.scss';
+
+.alert-box {
+    border-radius: 4px;
+    color: var(--white-color);
+    font-size: calc(var(--body-font-size) - 2px);
+    padding: 5px 10px;
+    margin-bottom: 15px;
+
+    &--error {
+        background-color: var(--error-color);
+    }
+
+    &--warning {
+        background-color: var(--warning-color);
+    }
+
+    &--success {
+        background-color: var(--success-color);
+    }
+}

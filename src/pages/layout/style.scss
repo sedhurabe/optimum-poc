@@ -1,0 +1,9 @@
+@import 'src/scss/mixins.scss';
+
+.layout-container{
+    min-height: 100vh;
+    padding-left: 70px;
+    &__inner{
+        padding: 15px;
+    }
+}

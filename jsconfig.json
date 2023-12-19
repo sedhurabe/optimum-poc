@@ -1,0 +1,11 @@
+// This is because we have not yet configured VsCode intelliSense to recognize absolute import paths
+{
+    "compilerOptions": {
+        "baseUrl": ".",
+        "paths": {
+            "src/*": [
+                "./src/*"
+            ],
+        }
+    }
+}

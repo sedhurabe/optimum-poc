@@ -1,0 +1,26 @@
+@import "src/scss/mixins";
+
+.form-button {
+    input {
+        @include width-height(100%, 45px);
+        border-radius: 4px;
+        font-weight: 700;
+        padding: 10px;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+    }
+    &--primary{
+        input {
+            background-color: var(--primary-color);
+            border: none;
+            color: var(--white-color);
+        }
+    }
+    &--secondary{
+        input {
+            background-color: transparent;
+            border: 1px solid var(--primary-color);
+            color: var(--primary-color);
+        }
+    }
+}

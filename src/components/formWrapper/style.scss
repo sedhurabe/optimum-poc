@@ -1,0 +1,8 @@
+@import 'src/scss/mixins.scss';
+
+.form-btn{
+    @include display-flex(flex);
+    @include flex-direction(row);
+    @include justify-content(flex-end);
+    gap: 15px;
+}

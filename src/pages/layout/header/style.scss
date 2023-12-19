@@ -1,0 +1,7 @@
+@import 'src/scss/mixins.scss';
+
+.header{
+    border-bottom: 1px solid var(--border-color);
+    height: 60px;
+    padding: 15px;
+}

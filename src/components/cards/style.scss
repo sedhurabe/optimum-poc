@@ -1,0 +1,58 @@
+@import 'src/scss/mixins.scss';
+
+.card-blk {
+    @include display-flex(flex);
+    @include flex-direction(column);
+    @include justify-content(space-between);
+    background-color: var(--border-color);
+    border-radius: 10px;
+    height: 150px;
+    margin-bottom: 15px;
+    padding: 15px;
+
+    h6,
+    h2 {
+        padding: 0;
+    }
+
+    h6 {
+
+        span,
+        small {
+            font-weight: 300;
+            display: block;
+            padding-top: 2px;
+            letter-spacing: 2px;
+        }
+
+        small {
+            font-size: calc(var(--body-font-size) - 4px);
+            line-height: var(--body-font-size);
+        }
+    }
+
+    strong {
+        font-style: italic;
+        font-size: calc(var(--body-font-size) + 10px);
+        font-weight: 700;
+    }
+
+    &__title {
+        @include display-flex(flex);
+        @include flex-direction(row);
+        @include justify-content(space-between);
+        @include align-items(center);
+    }
+
+    &__logo {
+        font-size: calc(var(--body-font-size) + 10px);
+    }
+
+    &__content {
+        text-align: center;
+    }
+}
+
+.no-card {
+    padding-bottom: 15px;
+}
